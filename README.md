@@ -9,3 +9,9 @@ localstorage that works in node and the browser
 On node it will use [node-localstorage](https://www.npmjs.com/package/node-localstorage).
 On web if localstorage is available it will use the browsers version of localstorage.
 If the browser doesn't have localstorage it will use [Remy Sharp's pollyfill](https://gist.github.com/remy/350433)
+
+
+## Testing
+```shell
+npm test
+```
