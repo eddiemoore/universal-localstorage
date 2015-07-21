@@ -1,5 +1,22 @@
+var assign = require('lodash.assign')
+var pkg = require('../package.json')
 var webpackConfig = require('./webpack.config')
 webpackConfig.devtool = 'inline-source-map'
+
+var customLaunchers = {
+  sl_ie: {
+    base: 'SauceLabs',
+    browserName: 'internet explorer'
+  },
+  sl_chrome: {
+    base: 'SauceLabs',
+    browserName: 'chrome'
+  },
+  sl_firefox: {
+    base: 'SauceLabs',
+    browserName: 'firefox'
+  }
+}
 
 var options = {
   // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
@@ -31,6 +48,7 @@ var options = {
   plugins: [
     'karma-chrome-launcher',
     'karma-firefox-launcher',
+    'karma-sauce-launcher',
     'karma-chai',
     'karma-mocha',
     'karma-sourcemap-loader',
@@ -40,6 +58,17 @@ var options = {
 
   // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
   browsers: ['Chrome', 'Firefox']
+}
+
+if (process.env.CI_NAME === 'codeship') {
+  assign(options, {
+    sauceLabs: {
+      testName: pkg.name
+    },
+    customLaunchers: customLaunchers,
+    browsers: Object.keys(customLaunchers),
+    reporters: ['dots', 'saucelabs']
+  })
 }
 
 module.exports = function (config) {
