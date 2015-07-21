@@ -1,11 +1,12 @@
 {
   "name": "universal-localstorage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "localstorage that works in node and the browser",
   "main": "lib/index.js",
   "scripts": {
     "pretest": "standard",
-    "test": "gulp test && gulp karma"
+    "test": "gulp test && gulp karma",
+    "prepublish": "gulp build"
   },
   "repository": {
     "type": "git",
