@@ -1,5 +1,5 @@
 var assign = require('lodash.assign')
-var pkg = require('../package.json')
+var pkg = require('./package.json')
 var webpackConfig = require('./webpack.config')
 webpackConfig.devtool = 'inline-source-map'
 

@@ -1,7 +1,7 @@
 # universal-localstorage
 localstorage that works in node and the browser
 
-[![Build Status](https://img.shields.io/travis/eddiemoore/universal-localstorage.svg)](https://travis-ci.org/eddiemoore/universal-localstorage)
+[![Build Status](https://img.shields.io/codeship/3bfffde0-1184-0133-460e-76104088809d.svg)](https://codeship.com/projects/92304)
 [![Dependency Status](https://img.shields.io/david/eddiemoore/universal-localstorage.svg)](https://david-dm.org/eddiemoore/universal-localstorage)
 [![Dev Dependency Status](https://img.shields.io/david/dev/eddiemoore/universal-localstorage.svg)](https://david-dm.org/eddiemoore/universal-localstorage#info=devDependencies)
 [![Code Coverage](https://img.shields.io/codecov/c/github/eddiemoore/universal-localstorage.svg)](https://codecov.io/github/eddiemoore/universal-localstorage)
