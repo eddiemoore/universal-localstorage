@@ -1,3 +1,4 @@
+// By Remy Sharp https://gist.github.com/remy/350433
 if (typeof window.localStorage == 'undefined' || typeof window.sessionStorage == 'undefined') (function () {
 
 var Storage = function (type) {
