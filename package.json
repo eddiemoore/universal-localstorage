@@ -68,6 +68,6 @@
     "webpack": "^1.10.1"
   },
   "dependencies": {
-    "node-localstorage": "^0.5.1"
+    "node-localstorage": "^1.1.2"
   }
 }
