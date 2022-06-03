@@ -89,7 +89,7 @@ jobs:
     name: Codecov
     runs-on: ubuntu-latest
     needs:
-      - lint
+      # - lint
       - test
     steps:
       - uses: actions/checkout@v2
