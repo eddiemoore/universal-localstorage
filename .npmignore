@@ -27,7 +27,7 @@ build/Release
 node_modules
 src
 test
-scratch
+uls-scratch
 gulpfile.babel.js
 karma.config.js
 webpack.config.js
