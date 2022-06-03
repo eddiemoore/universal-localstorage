@@ -1,4 +1,5 @@
 # universal-localstorage
+
 localstorage that works in node and the browser
 
 [![Build Status](https://img.shields.io/codeship/3bfffde0-1184-0133-460e-76104088809d.svg)](https://codeship.com/projects/92304)
@@ -10,8 +11,17 @@ On node it will use [node-localstorage](https://www.npmjs.com/package/node-local
 On web if localstorage is available it will use the browsers version of localstorage.
 If the browser doesn't have localstorage it will use [Remy Sharp's pollyfill](https://gist.github.com/remy/350433)
 
+### Change node's folder
+
+By default universal-localstorage will use `./uls-scratch` as the storage folder in node.
+To change the folder, set the `ULS_FOLDER` to a specified folder
+
+```shell
+ULS_FOLDER=./my_scratch_folder
+```
 
 ## Testing
+
 ```shell
 npm test
 ```
