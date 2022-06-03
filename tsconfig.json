@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2016",
+    "target": "ES5",
     "module": "UMD",
     "rootDir": "./src",
     "declaration": true,
